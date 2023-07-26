@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="./funciones.js"></script>
+    <link rel="icon" href="./multimedia1/icono.png">
+    <title>Portal del Estudiante - Estrés y Ansiedad</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="estres.html">Estrés y Ansiedad</a></li>
+                <li><a href="vidasaludable.html">Vida saludable</a></li>
+                <li><a href="vidasocial.html">Equilibrio Social</a></li>
+                <li><a href="organizacion.html">Organización</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Sobrellevando el Estrés y la Ansiedad en la Vida Universitaria</h1>
+        <p> La vida universitaria es una emocionante etapa llena de desafíos y oportunidades de crecimiento. Sin embargo, también puede ser una época en la que los estudiantes se enfrentan a niveles significativos de estrés y ansiedad. La presión académica, la incertidumbre sobre el futuro y la necesidad de equilibrar múltiples responsabilidades pueden generar una carga emocional abrumadora. En esta sección, exploraremos las causas y efectos del estrés y la ansiedad en el contexto universitario, así como estrategias efectivas para sobrellevar estas situaciones y mantener un bienestar emocional adecuado durante esta etapa crucial de la vida. <br></p>
+            
+            <br><h2>Causas del Estrés y la Ansiedad</h2>
+            <img id="foto1" src="./multimedia1/imagen2.jpg" width="490px" alt="imagen estres">
+            <p> La vida universitaria puede ser un torbellino de emociones, y varias razones contribuyen al estrés y la ansiedad que los estudiantes enfrentan. La presión por rendir bien académicamente, la competencia en el entorno estudiantil, los plazos ajustados, y el temor a no cumplir con las expectativas personales o familiares, son algunas de las causas comunes de estrés.
+            La adaptación a un nuevo ambiente, alejado del hogar y de amistades cercanas, también puede generar sentimientos de ansiedad y soledad. Además, la preocupación por el futuro profesional y las decisiones cruciales sobre la carrera a seguir pueden agregar una carga emocional adicional.</p><br>
+            
+            <h2>Efectos del Estrés y la Ansiedad</h2>
+            <p>El estrés y la ansiedad prolongados pueden tener un impacto significativo en la salud mental y física de los estudiantes universitarios. Los efectos pueden variar desde dificultades para concentrarse y dormir hasta síntomas más graves como la depresión o el agotamiento.
+            
+            El estrés crónico también puede afectar el rendimiento académico y disminuir la satisfacción general con la vida universitaria. Por otro lado, la ansiedad excesiva puede obstaculizar la capacidad de enfrentar nuevos retos y aprovechar al máximo las oportunidades que ofrece la experiencia universitaria.</p><br>
+            
+            <br><h2>Estrategias para Sobrellevar el Estrés y la Ansiedad</h2>
+            <p> Afortunadamente, existen diversas estrategias para manejar y reducir el estrés y la ansiedad durante la vida universitaria. Aquí te presentamos algunas recomendaciones para cultivar un bienestar emocional saludable: <br><br>
+            
+            <b> - Organización y Planificación:</b> Establece una rutina de estudio y organiza tus tareas para reducir la sensación de agobio. Dividir grandes proyectos en tareas más manejables puede hacer que todo parezca más alcanzable. <br><br>
+            
+            <b> - Práctica de Técnicas de Relajación:</b> Dedica tiempo para practicar técnicas de relajación como la meditación, la respiración profunda o el yoga. Estas prácticas pueden ayudar a calmar la mente y reducir el estrés. <br><br>
+            
+            <b> - Apoyo Social:</b> No tengas miedo de buscar apoyo en amigos, familiares o compañeros de clase. Compartir tus preocupaciones puede aliviar la sensación de aislamiento y te brinda la oportunidad de recibir consejos y perspectivas diferentes. <br><br>
+            
+            <b> - Equilibrio entre el Estudio y el Descanso:</b> Es importante programar momentos de descanso y actividades recreativas para desconectar y recargar energías. Un equilibrio adecuado entre el estudio y el tiempo para ti es esencial para una vida universitaria satisfactoria. <br><br>
+            
+            <b> - Buscar Ayuda Profesional:</b> Si el estrés y la ansiedad se vuelven abrumadores y afectan significativamente tu bienestar, no dudes en buscar ayuda de profesionales como consejeros o psicólogos universitarios. <br><br>
+            Recuerda que el estrés y la ansiedad son reacciones normales ante los desafíos de la vida universitaria, pero con las estrategias adecuadas, puedes enfrentarlos de manera efectiva y desarrollar habilidades que te servirán a lo largo de tu vida. ¡Aprovecha esta etapa para crecer y aprender a cuidar de ti mismo/a!</p>
+            <h1>Formulario</h1>
+            <p>Te ofrecemos esta sección interactiva relacionada con el bienestar del estudiante. Aquí podrás indicar tu nivel académico y recibirás un consejo.</p> 
+            <h2>Completá</h2>
+            <form action="">
+                <span>Nombre</span>
+                <input required type="text" name="nombre" id="nombre" placeholder="Nombre *" ><br><br>
+                <span>Apellido</span>
+                <input required type="text" name="apellido" id="apellido" placeholder="Apellido *" ><br><br>
+                <span>Edad</span>
+                <input type="text" name="edad" id="edad" placeholder="Edad"><br><br>
+                <span>Nivel</span>
+                <select required name="" id="nivel">
+                    <option value="secundario">Secundario</option>
+                    <option value="universidad">Universitario</option>
+                    <option value="egresado">Ya egresado</option>
+                </select><br><br>
+                <button type="button" onclick="obtener()">Obtener</button>
+                <button type="button" onclick="borrar()">Borrar</button><br><br>
+                <hr><div id="retorno"></div><hr><br>
+            </form>   
+
+        </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Contacto</h3>
+                <p>Email: contacto@portaldelestudiante.com</p>
+                <p>Teléfono: +123456789</p>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos en redes sociales</h3>
+                <ul>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Portal del Estudiante - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
